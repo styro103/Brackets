@@ -1,5 +1,5 @@
 /*
- * The class that checks whether an input string is properly nested.
+ * The class that checks whether an input string is properly nested using a stack.
  * It has a time complexity of O(N).
  */
 
