@@ -11,9 +11,11 @@ class StackChecker
 {
     public boolean propNested(String S) 
     {
-        //Edge Case
+        //Edge Cases
 		if (S.length()==0) //Empty String
             return true; //Properly Nested
+		else if ((S.length()&1)==1) //If Odd Number of Characters
+			return false; //Automatically Not Properly Nested
         
 		//General Case
         int N = S.length(); //Get Length
