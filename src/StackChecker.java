@@ -49,7 +49,7 @@ class StackChecker
             }       
         }
 		
-		if (nest.size()!=0) //After All Pushes and Pop, Stack Should be Empty
+		if (!nest.empty()) //After All Pushes and Pop, Stack Should be Empty
 			return false; //If Not, Improperly Nested
 		
 		return true; //If Reached Here, Properly Nested
